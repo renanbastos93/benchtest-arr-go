@@ -2,14 +2,14 @@ package main
 
 var size = 10000
 
-func useAppendWithLength() {
+func useAppendWithoutLength() {
 	var arr = []int{}
 	for i := 0; i < size; i++ {
 		arr = append(arr, i)
 	}
 }
 
-func useAppendWithoutLength() {
+func useAppendWithLength() {
 	var arr = make([]int, 0, size)
 	for i := 0; i < size; i++ {
 		arr = append(arr, i)
