@@ -17,7 +17,7 @@ func useAppendWithLength() {
 }
 
 func notUseAppend() {
-	var arr = make([]int, 1, size+1)
+	var arr = make([]int, 1, size)
 	for k := range arr {
 		arr[k] = k
 	}
